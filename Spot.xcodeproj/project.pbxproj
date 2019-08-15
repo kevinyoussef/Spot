@@ -15,6 +15,11 @@
 		DB0D19E022F84C3F00EC00D8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB0D19DE22F84C3F00EC00D8 /* LaunchScreen.storyboard */; };
 		DB0D19EB22F84C3F00EC00D8 /* SpotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0D19EA22F84C3F00EC00D8 /* SpotTests.swift */; };
 		DB0D19F622F84C3F00EC00D8 /* SpotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0D19F522F84C3F00EC00D8 /* SpotUITests.swift */; };
+		DB0D1A0622F8569700EC00D8 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB0D1A0522F8569700EC00D8 /* CollectionViewCell.swift */; };
+		DB30049E230409DA00A167B5 /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DB30049D230409DA00A167B5 /* icon.jpg */; };
+		DBAE403422F992E7006F604A /* TracksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAE403322F992E7006F604A /* TracksTableViewController.swift */; };
+		DBAE403622F9E9FE006F604A /* TracksTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAE403522F9E9FE006F604A /* TracksTableViewCell.swift */; };
+		DBAE403822FB7757006F604A /* AudioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBAE403722FB7757006F604A /* AudioViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		DB0D19F122F84C3F00EC00D8 /* SpotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB0D19F522F84C3F00EC00D8 /* SpotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotUITests.swift; sourceTree = "<group>"; };
 		DB0D19F722F84C4000EC00D8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB0D1A0522F8569700EC00D8 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		DB30049D230409DA00A167B5 /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = icon.jpg; sourceTree = "<group>"; };
+		DBAE403322F992E7006F604A /* TracksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksTableViewController.swift; sourceTree = "<group>"; };
+		DBAE403522F9E9FE006F604A /* TracksTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TracksTableViewCell.swift; sourceTree = "<group>"; };
+		DBAE403722FB7757006F604A /* AudioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,18 @@
 		DB0D19D122F84C3E00EC00D8 /* Spot */ = {
 			isa = PBXGroup;
 			children = (
+				DBAE403722FB7757006F604A /* AudioViewController.swift */,
+				DB0D1A0522F8569700EC00D8 /* CollectionViewCell.swift */,
+				DBAE403522F9E9FE006F604A /* TracksTableViewCell.swift */,
 				DB0D19D222F84C3E00EC00D8 /* AppDelegate.swift */,
 				DB0D19D422F84C3E00EC00D8 /* ViewController.swift */,
 				DB0D19D622F84C3E00EC00D8 /* Main.storyboard */,
 				DB0D19DC22F84C3F00EC00D8 /* Assets.xcassets */,
 				DB0D19DE22F84C3F00EC00D8 /* LaunchScreen.storyboard */,
 				DB0D19E122F84C3F00EC00D8 /* Info.plist */,
+				DB30049D230409DA00A167B5 /* icon.jpg */,
 				DB0D19D922F84C3E00EC00D8 /* Spot.xcdatamodeld */,
+				DBAE403322F992E7006F604A /* TracksTableViewController.swift */,
 			);
 			path = Spot;
 			sourceTree = "<group>";
@@ -232,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB30049E230409DA00A167B5 /* icon.jpg in Resources */,
 				DB0D19E022F84C3F00EC00D8 /* LaunchScreen.storyboard in Resources */,
 				DB0D19DD22F84C3F00EC00D8 /* Assets.xcassets in Resources */,
 				DB0D19D822F84C3E00EC00D8 /* Main.storyboard in Resources */,
@@ -261,7 +277,11 @@
 			files = (
 				DB0D19DB22F84C3E00EC00D8 /* Spot.xcdatamodeld in Sources */,
 				DB0D19D522F84C3E00EC00D8 /* ViewController.swift in Sources */,
+				DB0D1A0622F8569700EC00D8 /* CollectionViewCell.swift in Sources */,
+				DBAE403422F992E7006F604A /* TracksTableViewController.swift in Sources */,
 				DB0D19D322F84C3E00EC00D8 /* AppDelegate.swift in Sources */,
+				DBAE403822FB7757006F604A /* AudioViewController.swift in Sources */,
+				DBAE403622F9E9FE006F604A /* TracksTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -437,6 +457,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RWS9822VMY;
 				INFOPLIST_FILE = Spot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -454,6 +475,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RWS9822VMY;
 				INFOPLIST_FILE = Spot/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
