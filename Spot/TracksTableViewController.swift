@@ -65,7 +65,7 @@ class TracksTableViewController: UITableViewController {
             let url: String
         }
 
-        let urlString = "https://api.spotify.com/v1/search?q=genre:\(genreNameDict[genreName]!)&type=track"
+        let urlString = "https://api.spotify.com/v1/search?q=genre:\(genreNameDict[genreName]!)&limit=50&type=track"
         print(urlString)
         let session = URLSession.shared
         let url = URL(string: urlString)!
@@ -73,7 +73,7 @@ class TracksTableViewController: UITableViewController {
 
         request.addValue("application/json", forHTTPHeaderField: "Accept")
         request.addValue("application/json", forHTTPHeaderField: "Content-Type")
-        request.addValue("Bearer BQBrK5wDrT2JzTghO86JFMe4uhSc40gps8-1dEhGUwwyTTuJVbUIGP3QsGgwP_ZlWsF5ZOGl1HW_LsrZPOIds1v-4vsoRxWVlOfK_8kXs3iDDn8AwFOXzF3zzAJS4yCSO3KNK-ZIXF_5Dr-9L-o5XL2hIGAhC4j2FgDYLoKJ2DYLmWU1GutYEEC0d6OQC8gFkgdoXc9DXeB1Org21PenBDe6BDOaVlilFYx-ZbEPoRXdl5jdEVc-9JFM3wRV_B9oTO32ujA3UMmEh79OJmAZozcy5ATDz06m", forHTTPHeaderField: "Authorization")
+        request.addValue("Bearer BQDOYa0jU5Qr2Q0Qw9DN48e1hsvTU10oD0QS1j5lklwZP3v56awcWkHvWr9ZRE_VUuw0PoKdoEgQtRBstPsDun7Xgquc5FseEHE4axyA2XLgYmkWAop9ODWJUgJrk5TM0Y91PjjsDv5Mu6Jgi4o8ytkBCmAsyYH5apw9XYV7TNcz3sAh4R-RPeWI6qmKc6B7BnGA0a7U_Qfx-xsvRh_s6d9xyVruqAJB-On3iIyjSXjixAMeCuVaYc_7BTUWABdsksf8MYulpuT1SfCCXC2zexwkoTGdvBp4", forHTTPHeaderField: "Authorization")
 
         session.dataTask(with: request, completionHandler: { (data: Data?, response: URLResponse?, error: Error?) in
 
